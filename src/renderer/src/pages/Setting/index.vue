@@ -82,7 +82,7 @@ const platteList = ref<isPlatte[]>([{
     name: "蓝金",
     id: "theme2",
     type: "light",
-    maxColor: "rgb(160,209,242)",
+    maxColor: "rgb(160,209,241)",
     bgiColor: "rgb(249,232,152)"
 }])
 
