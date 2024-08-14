@@ -1,0 +1,47 @@
+
+// @hslColor: v-bind('colorStore.hslColor[0]');
+@hslColor: var(--hslColor, rgb(251,60,41));
+// @maxColor: v-bind('colorStore.maxColor[0]');
+@maxColor: var(--maxColor, rgb(238, 28, 37));
+// @secColor: v-bind('colorStore.maxColor[1]');
+@secColor: var(--secColor, rgb(251,60,41));
+@bgiColor: var(--bgiColor, rgb(20,24,27));
+@bgiSColor: var(--bgiSColor, rgb(27,31,34));
+@fontColor: var(--fontColor, rgb(255,255,255));
+@greyColor: var(--greyColor, rgb(105, 105, 105));
+@whiteGreyColor: var(--whiteGreyColor, rgb(220,220,220));
+@lineLyricColor: var(--lineLyricColor, rgb(231,218,184));
+
+:export {
+  name: "less";
+  maxColor: @maxColor;
+  bgiColor: @bgiColor;
+  secColor: @secColor;
+  hslColor: @hslColor;
+  bgiSColor: @bgiSColor;
+  fontColor: @fontColor;
+  greyColor: @greyColor;
+  whiteGreyColor: @whiteGreyColor;
+  lineLyricColor: @lineLyricColor;
+}
+
+.blendMode {
+  // mix-blend-mode: difference;
+  // color: rgb(127.5, 127.5, 127.5);
+}
+
+.absolutely {
+  width: 100%;
+  height: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexSpance {
+  display: flex;
+  justify-content: space-between;
+}
